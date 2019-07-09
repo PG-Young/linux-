@@ -1,0 +1,2 @@
+ps -ef | grep flume | wc -l  查看有多少个进程
+ps -ef | wc -l
