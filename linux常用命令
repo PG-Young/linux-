@@ -1,2 +1,4 @@
 ps -ef | grep flume | wc -l  查看有多少个进程
 ps -ef | wc -l
+nohup ./bin/flume-ng agent --conf conf --conf-file conf/flume-adx-req.properties --name adxReq -Dflume.root.logger=INFO,console &  
+启动守护进程用nohup
