@@ -2,7 +2,7 @@ ps -ef | grep flume | wc -l  查看有多少个进程
 ps -ef | wc -l
 nohup ./bin/flume-ng agent --conf conf --conf-file conf/flume-adx-req.properties --name adxReq -Dflume.root.logger=INFO,console &  
 启动守护进程用nohup
-
+hadoop fs -cat s3://transsion-athena/online/athena_10250006/2019062*/*/* |wc -l  统计多少条数据。
 
 清理磁盘命令：
  df -h ，这个命令用于查看服务器空间
